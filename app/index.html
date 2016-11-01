@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Facebook App Clone</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Facebook Clone</a>
+            </div>
+            boot
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    <div class="container">
+        <div ng-view>
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Please login</h4>
+                <button type="button" class="btn btn-default">Login </button>
+                <br>
+                <br>
+                <div class="well">
+                    <h4>User Info</h4>
+                    <ul>
+                        <li>ID:someID</li>
+                        <li>Name:Deepak</li>
+                        <li>Country:India</li>
+                        <li>Gender:Male</li>
+                        <li>Mail:erdahuja@gmail.com</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="well">
+                    <h4>Permissions</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>Welcome to Facebook</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Status Update</label>
+                        <textarea name="" id="" cols="20" rows="5" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="view1/view1.js"></script>
+    <script src="facebook/facebook.js"></script>
+
+</body>
+
+</html>
